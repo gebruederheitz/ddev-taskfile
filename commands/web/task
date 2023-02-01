@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#ddev-generated
+
+## Description: Run taskfile.dev command inside the web container
+## Usage: task [args]
+## Example: "task typo3cms build:frontend"
+## ProjectTypes: typo3
+## ExecRaw: true
+
+task "$@"
