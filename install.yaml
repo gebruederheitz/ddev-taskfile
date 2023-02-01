@@ -7,7 +7,7 @@ name: ddev-taskfile
 pre_install_actions:
 project_files:
 - web-build/Dockerfile.ddev-taskfile
-
+- commands/web/task
 global_files:
 post_install_actions:
 yaml_read_files:
