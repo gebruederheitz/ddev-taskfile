@@ -4,7 +4,7 @@
 
 ## Description: Run taskfile.dev command inside the web container
 ## Usage: task [args]
-## Example: "task typo3cms build:frontend"
+## Example: "task build:frontend"
 ## ExecRaw: true
 ## HostWorkingDir: true
 
