@@ -16,4 +16,4 @@ For earlier versions of DDEV run
 ddev get gebruederheitz/ddev-taskfile
 ```
 
-**Maintained by [@AndreasMaros](https://github.com/@AndreasMaros) with contributions by [@Maks Oleksyuk](https://github.com/maks-oleksyuk)
+**Maintained by [@AndreasMaros](https://github.com/@AndreasMaros) with contributions by [@Maks Oleksyuk](https://github.com/maks-oleksyuk)**
