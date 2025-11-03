@@ -40,13 +40,3 @@ jobs:
           debug_enabled: ${{ github.event.inputs.debug_enabled }}
           addon_repository: ${{ env.GITHUB_REPOSITORY }}
           addon_ref: ${{ env.GITHUB_REF }}
-
-  keepalive:
-    runs-on: ubuntu-24.04
-    steps:
-      # keepalive-workflow adds a dummy commit if there's no other action here, keeps
-      # GitHub from turning off tests after 60 days
-      - uses: gautamkrishnar/keepalive-workflow@v1
-        if: matrix.ddev_version == 'stable'
-
-
