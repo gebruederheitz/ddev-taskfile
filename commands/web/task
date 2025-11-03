@@ -1,11 +1,12 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 #ddev-generated
-
 ## Description: Run taskfile.dev command inside the web container
 ## Usage: task [args]
 ## Example: "task build:frontend"
+## Aliases: t
 ## ExecRaw: true
 ## HostWorkingDir: true
+## MutagenSync: true
 
 task "$@"
