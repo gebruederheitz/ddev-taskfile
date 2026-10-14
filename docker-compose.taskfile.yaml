@@ -1,0 +1,8 @@
+#ddev-generated
+# Passes TASK_VERSION from .ddev/.env.taskfile to the web image build.
+# Leave it unset to install the latest Task release.
+services:
+  web:
+    build:
+      args:
+        TASK_VERSION: ${TASK_VERSION:-}

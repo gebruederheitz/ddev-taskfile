@@ -1,13 +1,15 @@
+# Details about the install.yaml file are at https://docs.ddev.com/en/stable/users/extend/creating-add-ons/
+
 name: ddev-taskfile
 
-# pre_install_actions - list of actions to run before installing the addon.
-# Examples would be removing an extraneous docker volume,
-# or doing a sanity check for requirements.
-# DDEV environment variables can be interpolated into these actions
-pre_install_actions:
+# Files copied into the project's .ddev directory.
+# Each file must contain #ddev-generated so a later `ddev add-on get` can replace it
+# and `ddev add-on remove` can delete it, unless the user has customised it.
 project_files:
-- web-build/Dockerfile.ddev-taskfile
-- commands/web/task
-global_files:
-post_install_actions:
-yaml_read_files:
+  - docker-compose.taskfile.yaml
+  - web-build/Dockerfile.ddev-taskfile
+  - commands/web/task
+
+# v1.23.5 introduced `ddev add-on get`, `ddev dotenv` and `.ddev/.env.*` interpolation,
+# which the TASK_VERSION setting relies on.
+ddev_version_constraint: '>= v1.23.5'
